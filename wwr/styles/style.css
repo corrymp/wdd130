@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Urbanist:wght@500&display=swap');
 
+
 body {
     background-color: #47B265;
     font-size: 22px;
@@ -160,6 +161,156 @@ h4 {
     font-size: .8em;
     padding-bottom: 15px;
 }
+.details-grid {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: white;
+}
+.details-top {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: auto;
+}
+.details-top img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+}
+.details-top-text {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    z-index: 2;
+    text-align: center;
+}
+.details-top-text p {
+    color: white;
+    font-size: 27px;
+}
+.river-title, .river-details {
+    text-align: center;
+}
+.river-title {
+    margin-top: 10px;
+    color: white;
+}
+.river-info {
+    font-size: 18px;
+}
+.river-details, .river-info {
+    background-color: #51A9CC;
+    margin: 10px;
+    box-shadow: 3px 3px 6px #6f7364;
+}
+.river-details p, .river-info p {
+    margin: 5px;
+    color: #592768;
+}
+.river-image {
+    width: 100%;
+}
+.main-fork {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: auto auto;
+    margin: 10px;
+    background-color: #51A9CC;
+}
+.main-fork .river-image {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.main-fork .river-title {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.main-0fork .river-info {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.main-fork .river-details {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.desolation {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: auto auto;
+    margin: 10px;
+    background-color: #51A9CC;
+}
+.desolation .river-image {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.desolation .river-title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.desolation .river-info {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.desolation .river-details {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.grand-canyon {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    margin: 10px;
+    background-color: #51A9CC;
+}
+.grand-canyon .river-image {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    width: 100%;
+}
+.grand-canyon .river-title {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-bottom: 10%;
+}
+.grand-canyon .river-info {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    font-size: 22px;
+}
+.grand-canyon .river-details-2 {
+    text-align: center;
+    background-color: #51A9CC;
+    margin: 10px;
+    box-shadow: 3px 3px 6px #6f7364;
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.river-details-2 p {
+    margin: 5px;
+    color: #592768;
+}
+.details-bottom {
+    display: grid;
+    grid-template-columns: 1fr 2fr 5fr;
+    grid-template-rows: auto auto auto;
+    grid-row: auto;
+    background-color: #51A9CC;
+    box-shadow: 3px 3px 6px #6f7364;
+}
+.details-bottom .river-image {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    width: 100%;
+}
+.details-bottom-text {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-radius: 10px;
+    background-color: #51A9CC;
+}
+.details-bottom-text p {
+    text-align: center;
+    font-size: 32px;
+}
 footer {
     background-color: #51A9CC;
     color: #592768;
@@ -226,6 +377,28 @@ footer .social img {
         width: 80%;
         display: block;
         margin: 0 auto;
+    }
+    .details-grid, .details-top, .main-fork, .desolation {
+        display: block;
+    }
+    .details-top-text p {
+        color: #592768;
+    }
+    .river-image {
+        display: none;
+    }
+    .river-title {
+        color: black;
+    }
+    .grand-canyon {
+        display: block;
+    }
+    .details-bottom {
+        display: block;
+        margin: 10px;
+    }
+    .details-bottom .river-image {
+        display: block;
     }
     footer {
         margin-top: 25px;
