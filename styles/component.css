@@ -11,19 +11,19 @@ body {
   background-size: cover;
 }
 #para1 {
-  background-image: url("/images/para1.jpg");
+  background-image: url("/wdd130/images/para1.jpg");
 }
 #para2 {
-  background-image: url("/images/para2.jpg");
+  background-image: url("/wdd130/images/para2.jpg");
 }
 #para3 {
-  background-image: url("/images/para3.jpg");
+  background-image: url("/wdd130/images/para3.jpg");
 }
 #para4 {
-  background-image: url("/images/para4.jpg");
+  background-image: url("/wdd130/images/para4.jpg");
 }
 #para5 {
-  background-image: url("/images/para5.jpg");
+  background-image: url("/wdd130/images/para5.jpg");
 }
 #top, #bottom {
     position: fixed;
