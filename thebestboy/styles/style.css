@@ -27,6 +27,9 @@ body {
     background-color: #51A9CC;
     color: #592768;
 }
+main img {
+    box-shadow: 3px 3px #6f736408;
+}
 
 /*header*/
 header {
@@ -161,6 +164,73 @@ nav a:hover {
     margin: 0 16px 0 8px;
 }
 
+/* help page */
+#help-main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 16px 0 16px 0;
+    justify-content: center;
+}
+.help-top {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 10fr 12fr;
+    margin: 0 16px 8px 16px;
+    justify-content: center;
+    text-align: center;
+}
+.help-top .help-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-right: 8px;
+}
+.help-text p {
+    font-size: 24px;
+    height: 100%;
+    margin: 24px 0;
+}
+.help-top img {
+    width: 100%;
+}
+.help-middle {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 12fr 10fr;
+    margin: 8px 16px 8px 16px;
+    justify-content: center;
+    text-align: center;
+}
+.help-middle .help-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 8px;
+}
+.help-middle img {
+    width: 100%;
+}
+.help-subtitle {
+    font-size: 32px;
+    font-family: Georgia, sans-serif;
+    margin: 0 0;
+    padding: 4px;
+    background-color: #51A9CC;
+    color: #592768;
+}
+.help-bottom {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-top: 8px;
+}
+.help-bottom img {
+    width: 100%;
+}
+
 /* footer */
 footer {
     background-color: #47B265;
@@ -258,6 +328,33 @@ footer a:hover {
     .history-bottom-left {
         margin: 0 0 0 0;
         max-width: 1000px;
+    }
+
+    #help-main {
+        margin: 16px auto 16px auto;
+        display: block;
+    }
+    .help-top {
+        margin: 0 8px 0 8px;
+        display: block;
+        max-width: 1000px;
+    }
+    .help-middle {
+        margin: 0 8px 0 8px;
+        display: block;
+        max-width: 1000px;
+    }
+    .help-subtitle {
+        font-size: 24px;
+    }
+    .help-bottom {
+        margin: 0 8px 0 8px;
+        display: block;
+        max-width: 1000px;
+    }
+    .help-top .help-text, .help-middle .help-text {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     footer {
