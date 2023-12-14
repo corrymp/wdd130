@@ -231,6 +231,37 @@ nav a:hover {
     width: 100%;
 }
 
+/* gallery*/
+#gallery-main {
+    margin: 16px 8px;
+    text-align: center;
+}
+.gallery-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2px;
+    height: 100%;
+}
+.image {
+    flex: 100%;
+    padding: 5px;
+    margin: 2px 0;
+    border: 3px solid #592768;
+    background-color: #47B265;
+    height: auto;
+    width: auto;
+}
+.image img {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
 /* footer */
 footer {
     background-color: #47B265;
@@ -242,7 +273,7 @@ footer {
     align-items: center;
 }
 footer p {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 footer p a:hover {
     text-decoration: none;
@@ -355,6 +386,16 @@ footer a:hover {
     .help-top .help-text, .help-middle .help-text {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    #gallery-main .title {
+        font-size: 24px;
+    }
+    #gallery-main .subtitle {
+        font-size: 16px;
+    }
+    .gallery-images {
+        display: block;
     }
 
     footer {
